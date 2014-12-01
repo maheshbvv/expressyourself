@@ -1,0 +1,46 @@
+<template name="profile">
+	{{#if currentUser}}
+	<div class="row">
+		<br>
+		<div class="col-md-12">
+			<div class="list-group">
+				<div class="list-group-item">
+					<div class="row-picture">
+						<img class="circle" src="user.png" alt="icon">
+					</div>
+					<div class="row-content">
+						<h4 class="list-group-item-heading">{{currentUser.profile.name}}</h4>
+						<p class="list-group-item-text">your preferences </p>
+					</div>
+					
+				</div>
+				<div class="list-group-separator"></div>
+			</div>
+		</div>
+		
+		<div class="col-md-3" align="center">
+			<div class="well well-info">
+				<label><i class="fa fa-user fa-2x"></i> : {{currentUser.profile.name}}</label>
+			</div>
+		</div>
+		<div class="col-md-3" align="center">
+			<div class="well well-info">
+				<label><i class="fa fa-ticket fa-2x"></i> : {{serviceFB}}{{serviceTW}}</label>
+			</div>
+		</div>
+		<div class="col-md-3" align="center">
+			<div class="well well-info">
+				<label><i class="fa fa-bullhorn fa-2x"></i> : {{shoutCount}}</label>
+			</div>
+		</div>
+		<div class="col-md-3" align="center">
+			<div class="well well-info">
+				<label><i class="fa fa-comments-o fa-2x"></i> : {{commentCount}}</label>
+			</div>
+		</div>
+	</div>
+	
+	{{/if}}
+	
+
+</template>

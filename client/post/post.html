@@ -1,0 +1,15 @@
+<template name="post">
+	<div class="clearFix"></div>
+	{{#if currentUser}}
+	<div class="row well well-info" align="right">
+		<input type="text" class="postText" placeholder="Here goes your mind!..">
+		<label><input type="checkbox" id="annon"> Mute Name</label>
+	</div>
+	{{/if}}
+	{{#each postTexts}}
+	<div class="jumbotron" style="margin-top:10px">
+		<span>{{user}} : {{posts}}</span>
+		{{> comment}}
+	</div>
+	{{/each}}
+</template>

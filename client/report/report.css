@@ -1,0 +1,13 @@
+.back-green{width:100%;background:#1abc9c;color:#fff;border-radius:5px;padding:0 0 5px 5px;font-size:20px;margin-top:10px;}
+.back-red{width:100%;background:#c0392b;color:#fff;border-radius:5px;padding:0 0 5px 0;font-size:20px;margin-top:10px;}
+thead{background:#34495e;color:#fff;}
+
+.backdrop{width:100%;height:100%;background:#eee;opacity:1.0;position:fixed;z-index:50;left:0;top:0;min-width:100vw;}
+.box{width:50%;height:300px;background:#fff;opacity:1;position:fixed;z-index:50;left:10%;top:20%; border-radius:10px;border:1px solid #ccc;}
+.box input[type="text"]{width:300px;height:40px;border:2px solid #ccc;border-radius:5px;}
+.box input[type="password"]{width:300px;height:40px;border:2px solid #ccc;border-radius:5px;}
+.box p{text-decoration:underline;text-transform:capitalize;}
+.green{height:40px;background:#16a085;border-radius:5px;border:1px solid #ccc;}
+.red{height:45%;background:#e74c3c;text-align:center;vertical-align:0;border-radius:5px;color:#fff;border:1px solid #ccc;}
+.fa-bug{margin-top:30%;}
+.tbody{height:80vh;overflow-y:scroll;overflow-x:hidden;}

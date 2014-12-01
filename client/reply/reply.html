@@ -1,0 +1,12 @@
+<template name="comment">
+	<div class="well well-info">
+		{{#each getComments}}
+		<p class="well well-info well-dismissable">
+			{{user}} : {{commentText}}
+		<button type="button" class="close" data-dismiss="well"  data-toggle="popover" data-placement="left" data-content="You can delete this comment if you are the owner.">×</button>
+		</p>
+		{{/each}}
+		<input type="text" id="commentText" placeholder="Comments Here..." style="width:100%" class="form-control">
+ 		<Label><input type="checkbox" id="annonComment"> Mute Name</Label>
+	</div>
+</template>

@@ -1,0 +1,50 @@
+<template name="layout">
+	<!-- 
+	<header>
+		<i class="fa fa-heart"></i><a href="{{pathFor 'home'}}">e<span class="color-red">X</span>press!</a>
+		<ol>
+			<li class="ban">{{> loginButtons}}  | </li>
+			<li><a href="{{pathFor 'post'}}">Xpress</a> | </li>
+			<li><a href="{{pathFor 'about'}}">About</a> | </li>
+			<li><a href="{{pathFor 'contact'}}">Contact</a></li>
+		</ol>
+	</header>
+		-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="{{pathFor 'home'}}">  &nbsp;&nbsp;&nbsp; eXpress</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+				<li class="x"><a href="{{pathFor 'home'}}">Home</a></li>
+				<li class="x"><a href="{{pathFor 'post'}}">eXpress It</a></li>
+				<li class="x"><a href="{{pathFor 'about'}}">About</a></li>
+				<li class="x"><a href="{{pathFor 'profile'}}">Profile</a></li>
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+				<li><a>{{> loginButtons}}</a></li>
+			  <li><a class="null" href="{{pathFor 'report'}}">Admin</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+	    <div class="clearFix"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{{> yield}}
+			</div>
+		</div>
+		
+	</div>
+	
+		
+	     
+		<div class="clearFix"></div>
+		<div class="clearFix"></div>
+	
+</template>

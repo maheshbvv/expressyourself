@@ -1,0 +1,50 @@
+<template name="report">
+	<div class="container">
+		{{#if currentUser}}
+		<div class="row" id="reportViewer">
+			<div class="col-md-12" align="left">
+				<div class="back-green">
+					All users
+				</div>
+			</div>
+			<div class="col-md-12">
+				<table class="table table-responsive table-condensed table-bordered">
+					<thead>
+						<tr>
+							<td>Post User Name</td>
+							<td>Original User Name</td>
+							<td>Post Time</td>
+						</tr>
+					</thead>
+					<tbody>
+						{{#each showReport}}
+						<tr>
+							<td>{{annon}}</td>
+							<td>{{user}}</td>
+							<td>{{timeNow}}</td>
+						</tr>
+						{{/each}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	<div class="backdrop"></div>
+	<div class="clearFix"></div>
+	<div class="col-md-12">
+		<div class="box" align="center">
+		
+				<h3>Admin Log-In</h3>
+		
+					<input type="text" id="adminName" placeholder="Administrator"><br>
+					<hr>
+					<input type="password" id="adminPassword" placeholder="Password"><br>
+					<div class="btn btn-success" id="adminLogin">Admin</div><br><br>
+					<label>No Hacking Entertained!...  Please</label>
+				
+			
+
+		</div>
+	</div>
+</template>
